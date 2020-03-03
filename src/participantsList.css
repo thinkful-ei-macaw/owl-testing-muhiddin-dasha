@@ -1,0 +1,17 @@
+body {
+  margin: 50px;
+}
+
+div.App-list {
+  direction: column;
+  text-align: left;
+}
+
+img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+li {
+  list-style: none;
+}
