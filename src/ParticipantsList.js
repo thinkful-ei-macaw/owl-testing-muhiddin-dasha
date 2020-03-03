@@ -1,16 +1,21 @@
 import React from "react";
-import participants from "./participantsStore";
+import { participants } from "./participantsStore";
 
 export default function displayParticipants(props) {
+  let session, stage;
+  if(props.inSession) {
+    session = <p>In session</p>
+  } else {
+    session = <p>Left</p>
+  }
+  if(props.onStage) {
+    stage = <p>On stage</p>
+  }
   return (
-    <div className="participants">
-      <ul className="participants">
-        {props.participants.map(participant => (
-          <li key={participant.id} name={participant.name}
-           avatar = {participant.avatar} insession={participant.inSession} onstage={participant.onstage}>
+          <li >
+            {props.id} {props.name}
+           <img src={props.avatar} /> 
+           {session} {stage}
           </li>
-        ))}
-      </ul>
-    </div>
   );
 }
