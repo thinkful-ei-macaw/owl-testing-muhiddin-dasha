@@ -2,9 +2,12 @@ body {
   margin: 50px;
 }
 
-div.App-list {
+.participantsList {
   direction: column;
-  text-align: left;
+  text-align: center;
+  width: 30%;
+  background-color: brown;
+
 }
 
 img {

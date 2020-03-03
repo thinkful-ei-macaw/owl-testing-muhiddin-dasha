@@ -1,7 +1,4 @@
-import React from "react";
-import participants from "./participants.list.js";
-
-const chatEvents = [
+export const chatEvents = [
   {
     participantId: 3,
     type: "message",
