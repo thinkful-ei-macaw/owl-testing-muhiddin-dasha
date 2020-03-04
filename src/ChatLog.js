@@ -1,14 +1,14 @@
 import React from "react";
+import './chatLog.css'
 
 
 export default function displayChat(props) {
   return (
-    <li>
-      {props.participantId}
-    {props.type}
-    {props.message}
-    {new Date(props.time)}
-    {new Date(props.timestamp)}
-    </li>
+    <div>
+      {props.name} 
+      {props.type} |
+      {props.message} | 
+      {Date(props.time)}<hr />
+    </div>
   );
 }

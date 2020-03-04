@@ -1,9 +1,6 @@
-body {
-  margin: 50px;
-}
 
 .participantsList {
-  direction: column;
+  display: inline-block;
   text-align: center;
   width: 30%;
   background-color: brown;

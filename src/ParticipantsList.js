@@ -15,7 +15,7 @@ export default function displayParticipants(props) {
     <li>
       {props.id} {props.name}
       <img src={props.avatar} />
-      {session} {stage}
+      {session} {stage}<hr />
     </li>
   );
 }

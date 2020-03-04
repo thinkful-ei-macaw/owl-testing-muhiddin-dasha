@@ -25,14 +25,14 @@ function App() {
           />
         ))}
       </div>
-      {/* <div className="chatlog">
-      {participants.map(participant => (
-          <ChatLog
-            key={participant.id}  name={participant.name} message={participant.message} type={participant.type} 
-            avatar = {participant.avatar} inSession={participant.inSession} onStage={participant.onStage}
+      <div className="chatLogs">
+      {chatEvents.map(participant => (
+          <ChatLog name={participant.name} avatar = {participant.avatar}
+          message={participant.message} type={participant.type} 
+             inSession={participant.inSession} onStage={participant.onStage}
           />
         ))}
-      </div> */}
+      </div>
     </main>
   );
 }
